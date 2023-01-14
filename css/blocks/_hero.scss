@@ -1,13 +1,11 @@
 .hero{
-    background: url(../../img/surfboard.png) center top no-repeat;
+    background: url(../../img/surfboard.svg)  no-repeat;
     background-color:#1968B1;
     height: 100vh;
     min-height: 650px;
     color: white;
-    background-size: 100%;
-  
+    background-size: cover;
 
-   
 }
 
 .hero__title-section{

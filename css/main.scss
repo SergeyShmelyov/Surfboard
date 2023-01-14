@@ -5,7 +5,9 @@ $black:#292929;
 $body:#666666;
 $white:#FFFFFF;
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap');
+$z-fixed-menu:100;
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import "base.scss";
 
 @import "./blocks/hero";
@@ -13,6 +15,16 @@ $white:#FFFFFF;
 @import "./blocks/features";
 @import "./blocks/feature";
 @import "./blocks/btn";
+@import "./blocks/section";
+@import "./blocks/headline";
+@import "./blocks/benefits";
+@import "./blocks/benefit";
+@import "./blocks/reviews";
+@import "./blocks/interactiv--avatar.scss";
+@import "./blocks/order--section";
+@import "./blocks/form";
+@import "./blocks/radio";
+@import "./blocks/fixed--menu";
 
 
 

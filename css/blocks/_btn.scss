@@ -7,14 +7,30 @@
     border-radius: 100px;
     line-height: 1;
     text-decoration: none;
+    border: none;
 
-    &--theme--yellow{
+    &--theme--yellow {
     background: #FEDB3F;
     color:$black;
     }
-    &:hover{
+    &:hover {
         color:$white;
         background:$black;
     }
+
+    &--theme--transperent{
+        background:transparent;
+        color:white;
+        text-transform: none;
+        }
+        &:hover {
+            color:white;
+            
+           
+        }
+
+        
+           
+
 
 }
