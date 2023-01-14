@@ -1,1 +1,20 @@
-@import "./blocks/_header.scss";
+$containerWidth:1100px;
+$baseFontSize:18px;
+
+$black:#292929;
+$body:#666666;
+$white:#FFFFFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap');
+@import "base.scss";
+
+@import "./blocks/hero";
+@import "./blocks/header";
+@import "./blocks/features";
+@import "./blocks/feature";
+@import "./blocks/btn";
+
+
+
+
+
