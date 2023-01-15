@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .radio{
     display: flex;
     cursor: pointer;
@@ -49,55 +48,3 @@
 .radio--checkbox{
     margin-bottom: 41px;
 }
-=======
-.radio{
-    display: flex;
-    cursor: pointer;
-    user-select: none;
-    margin-right: 10px;
-
-    &--checkbox{
-        .radio__visible{
-            border-radius: 20%;
-
-          &:before{
-            background:url(/img/jackdaw.svg) center center no-repeat;  
-                }
-        }
-    }
-
-}
-.radio__elem{
-    display: none;
-
-    &:checked ~ .radio__visible{
-        &:before{
-            display: block;
-        }
-    }
-}
-.radio__visible{
-    width: 25px;
-    height: 25px;
-    position: relative;
-    border-radius: 50%;
-    background: $white;
-    margin-right: 10px;
-
-    &:before{
-    content: "";
-    width: 13px;
-    height: 13px;
-    background: #FEDB3F;
-    border-radius: 50%;
-    position: absolute;
-    display: none;
-    top: 25%;
-    left: 25%;
-    transform: translate(-50% -50%);
-    }
-}
-.radio--checkbox{
-    margin-bottom: 41px;
-}
->>>>>>> 6b50312c6d0917b8f99d5de37b3c8028a1f438b3
