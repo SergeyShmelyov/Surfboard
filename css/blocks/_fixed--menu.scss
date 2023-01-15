@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .fixed--menu{
     position: fixed;
     top: 40%;
@@ -34,4 +35,42 @@
         left: 29%;
         transform: translate(-50% -50%);
     }
+=======
+.fixed--menu{
+    position: fixed;
+    top: 40%;
+    right: 3%;
+    z-index: $z-fixed-menu;
+
+}
+.fixed--menu__item{
+    margin-bottom: 5px;
+
+    &--active{
+        .fixed--menu__link{
+            border-color: white;
+        }
+    }
+}
+.fixed--menu__link{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: block;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        top: 30%;
+        left: 29%;
+        transform: translate(-50% -50%);
+    }
+>>>>>>> 6b50312c6d0917b8f99d5de37b3c8028a1f438b3
 }

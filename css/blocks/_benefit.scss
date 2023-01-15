@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .benefit{
     text-align: center;
 
@@ -28,3 +29,35 @@
     margin-bottom: 20px;
 }
 
+=======
+.benefit{
+    text-align: center;
+
+}
+.benefit__image--wrapper{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    position: relative;
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+.benefit__icon{
+    height: 68px;
+    width: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.benefit__title{
+    font-weight: bold;
+    font-size: 27px;
+    color:$black;
+    margin-bottom: 20px;
+}
+
+>>>>>>> 6b50312c6d0917b8f99d5de37b3c8028a1f438b3

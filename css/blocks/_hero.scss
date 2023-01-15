@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hero{
     background: url(../../img/surfboard.svg) no-repeat;
     background-color:#1968B1;
@@ -36,3 +37,43 @@
     margin-bottom: 39px;
     font-weight: 400;
 }
+=======
+.hero{
+    background: url(../../img/surfboard.svg) no-repeat;
+    background-color:#1968B1;
+    height: 100vh;
+    min-height: 650px;
+    color: white;
+    background-size: cover;
+    font-weight: bold;
+    
+
+}
+
+.hero__title-section{
+    width: 45%;
+}
+
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 28px 0 64px 0;
+}
+
+.hero__main-title{
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+
+.hero__title-desc{
+    font-size: 21px;
+    margin-bottom: 39px;
+    font-weight: 400;
+}
+>>>>>>> 6b50312c6d0917b8f99d5de37b3c8028a1f438b3
