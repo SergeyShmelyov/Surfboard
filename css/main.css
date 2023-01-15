@@ -85,7 +85,7 @@ footer {
 }
 
 .hero {
-  background: url(../img/surfboard.svg) no-repeat;
+  background: url(./../img/surfboard.svg) no-repeat;
   background-color: #1968B1;
   height: 100vh;
   min-height: 650px;
@@ -429,7 +429,7 @@ header {
 }
 
 .order--section {
-  background: url(../img/surfer.svg) no-repeat;
+  background: url(./../img/surfer.svg) no-repeat;
   background-color: #1968B1;
   height: 100vh;
   min-height: 650px;
@@ -510,7 +510,7 @@ header {
   border-radius: 20%;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../img/jackdaw.svg) center center no-repeat;
+  background: url(./../img/jackdaw.svg) center center no-repeat;
 }
 
 .radio__elem {
