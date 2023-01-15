@@ -1,10 +1,12 @@
 .hero{
-    background: url(../../img/surfboard.svg)  no-repeat;
+    background: url(../../img/surfboard.svg) no-repeat;
     background-color:#1968B1;
     height: 100vh;
     min-height: 650px;
     color: white;
     background-size: cover;
+    font-weight: bold;
+    
 
 }
 
@@ -23,7 +25,7 @@
 
 .hero__main-title{
     font-size: 48px;
-    line-height: 1.1;
+    line-height: 1.2;
     font-weight: bold;
     margin-bottom: 17px;
     text-transform: uppercase;
@@ -32,4 +34,5 @@
 .hero__title-desc{
     font-size: 21px;
     margin-bottom: 39px;
+    font-weight: 400;
 }

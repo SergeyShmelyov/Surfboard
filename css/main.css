@@ -91,6 +91,7 @@ footer {
   min-height: 650px;
   color: white;
   background-size: cover;
+  font-weight: bold;
 }
 
 .hero__title-section {
@@ -114,7 +115,7 @@ footer {
 
 .hero__main-title {
   font-size: 48px;
-  line-height: 1.1;
+  line-height: 1.2;
   font-weight: bold;
   margin-bottom: 17px;
   text-transform: uppercase;
@@ -123,6 +124,7 @@ footer {
 .hero__title-desc {
   font-size: 21px;
   margin-bottom: 39px;
+  font-weight: 400;
 }
 
 header {
@@ -213,12 +215,14 @@ header {
   line-height: 1;
   text-decoration: none;
   border: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .btn--theme--yellow {
   background: #FEDB3F;
   color: #292929;
 }
-.btn:hover {
+.btn--theme--yellow:hover {
   color: #FFFFFF;
   background: #292929;
 }
@@ -227,8 +231,8 @@ header {
   color: white;
   text-transform: none;
 }
-.btn:hover {
-  color: white;
+.btn--theme--transperent:hover {
+  color: #292929;
 }
 
 .section {
@@ -265,12 +269,12 @@ header {
 }
 
 .headline__title {
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 }
 
 .headline__subtitle {
   padding: 0 30%;
-  margin-bottom: 49px;
+  margin-bottom: 40px;
 }
 
 .benefits {
@@ -316,7 +320,7 @@ header {
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .benefit__icon {
@@ -374,17 +378,19 @@ header {
       -ms-flex: 1;
           flex: 1;
   margin-left: 38px;
+  margin-top: 26px;
 }
 
 .reviews__title {
   font-weight: bold;
   font-size: 27px;
   color: #292929;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .reviews__text {
-  margin-bottom: 25px;
+  padding-right: 243px;
+  margin-bottom: 7px;
 }
 
 .reviews__autor {
@@ -423,8 +429,7 @@ header {
 }
 
 .order--section {
-  background: url(../../img/surfer.jpg) no-repeat;
-  background-color: #1968B1;
+  background: url(../../img/surfer.svg) no-repeat;
   height: 100vh;
   min-height: 650px;
   color: white;
@@ -501,7 +506,7 @@ header {
   margin-right: 10px;
 }
 .radio--checkbox .radio__visible {
-  border-radius: 0;
+  border-radius: 20%;
 }
 .radio--checkbox .radio__visible:before {
   background: url(../../img/jackdaw.svg) center center no-repeat;
@@ -542,7 +547,7 @@ header {
 
 .fixed--menu {
   position: fixed;
-  top: 20%;
+  top: 40%;
   right: 3%;
   z-index: 100;
 }
