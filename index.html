@@ -48,8 +48,12 @@
                             </ul>
                         </nav>
                         <a href="tel:+78009039090" class="phone-number header__phone-number">
+
                             <span class="phone-number__icon">
-                                <img src="./img/phone.svg" class="phone-number__icon-elem" alt="телефон">
+                                <svg class="phone-icon">
+                                    <use xlink:href="./css/blocks/_sprite.svg#phone"></use>
+                                </svg>
+                               <!-- <img src="./img/phone.svg" class="phone-number__icon-elem" alt="телефон">-->
                             </span>
                             <span class="phone-number__text">88009039090</span>
                         </a>
@@ -72,24 +76,29 @@
                         <!-- первая иконка -->
                         <li class="features__item feature">
                             <div class="feature__icon">
-
                                 <picture>
                                     <source media="min-width:768px" srcset="./img/board.svg">
                                     <img src="./img/board.svg" alt="доска"></div>
                                 </picture>
-
                             <div class="feature__text">Уникальный дизайн</div>
                         </li>
                         <!-- вторая иконка -->
                         <li class="features__item feature">
                             <div class="feature__icon">
-                                <img src="./img/material.svg" alt="доска"></div>
+                                <picture>
+                                    <source media="min-width:768px" srcset="./img/material.svg">
+                                    <img src="./img/material.svg" alt="доска"></div>
+                                </picture>
                             <div class="feature__text">Прочные материалы</div>
                         </li>
                         <!-- третья иконка -->
                         <li class="features__item feature">
                             <div class="feature__icon">
-                                <img src="./img/car.svg" alt="доска"></div>
+                                <picture>
+                                    <source media="min-width:768px" srcset="./img/car.svg">
+                                    <img src="./img/car.svg" alt="доска"></div>
+                                </picture>
+                                
                             <div class="feature__text">Быстрая доставка</div>
                         </li>
                     </ul>
@@ -318,7 +327,11 @@
                         <div class="contacts__desc">Москва, ул.Новый Арбат, д.31/12</div>
                         <a href="tel:+78009039090" class="phone-number">
                             <span class="phone-number__icon">
-                                <img src="./img/black phone.svg" class="phone-number__icon-elem" alt="телефон">
+                                <svg class="phone-icon__black">
+                                    <use xlink:href="./css/blocks/_sprite.svg#phone"></use>
+                                </svg>
+
+                                <!--<img src="./img/black phone.svg" class="phone-number__icon-elem" alt="телефон">-->
                             </span>
                             <span class="phone-number__text--footer">88009039090</span>
                         </a>

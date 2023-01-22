@@ -273,6 +273,13 @@ header {
       flex-shrink: 0;
 }
 
+.phone-icon {
+  height: 0.6111111111rem;
+  width: 0.8888888889rem;
+  fill: white;
+  stroke: white;
+}
+
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -945,6 +952,13 @@ header {
 
 .phone-number__text--footer {
   color: #292929;
+}
+
+.phone-icon__black {
+  height: 0.6666666667rem;
+  width: 1.1111111111rem;
+  fill: black;
+  stroke: black;
 }
 
 .hamburger {
