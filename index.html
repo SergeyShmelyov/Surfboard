@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=1000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Surfboard</title>
@@ -13,6 +13,8 @@
 <body>
 
     <div class="wrapper">
+
+        
         <div class="maincontent">
             <!--Главная страница-->
             <section class="hero">
@@ -45,11 +47,17 @@
                                 </li>
                             </ul>
                         </nav>
-                        <a href="tel:+78009039090" class="phone-number">
+                        <a href="tel:+78009039090" class="phone-number header__phone-number">
                             <span class="phone-number__icon">
                                 <img src="./img/phone.svg" class="phone-number__icon-elem" alt="телефон">
                             </span>
                             <span class="phone-number__text">88009039090</span>
+                        </a>
+
+                        <a href="" class="hamburger">
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
                         </a>
                     </header>
                     <!-- центральный заголовок -->
@@ -64,7 +72,12 @@
                         <!-- первая иконка -->
                         <li class="features__item feature">
                             <div class="feature__icon">
-                                <img src="./img/board.svg" alt="доска"></div>
+
+                                <picture>
+                                    <source media="min-width:768px" srcset="./img/board.svg">
+                                    <img src="./img/board.svg" alt="доска"></div>
+                                </picture>
+
                             <div class="feature__text">Уникальный дизайн</div>
                         </li>
                         <!-- вторая иконка -->
@@ -83,8 +96,9 @@
                 </div>
                 </div>
             </section>
+
             <!--Страница ПОЧЕМУ?-->
-            <section class="section">
+            <section class="section benefits--section">
                 <div class="container">
                     <div class="headline">
                        <h2 class="section__title headline__title">почему Surfboard?</h2> 
@@ -142,8 +156,9 @@
                 </ul>
                 </div>
             </section>
+
             <!--Страница Отзывы -->
-            <section class="section">
+            <section class="section reviews--section">
                 <div class="container">
                    <h2 class="section__title">отзывы</h2> 
                     <div class="reviews">
@@ -191,12 +206,13 @@
                 </div>
                 
             </section>
+
             <!--Страница Формы -->
             <section class="section order--section section--font-color--white">
                 <div class="container">
                     <h2 class="section__title">закажите доску</h2> 
                     <form class="form">
-
+                    
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
@@ -287,7 +303,58 @@
                 </div>
             </section>
         </div>
-    </div>
+                <!--карта -->
+            <section class="map">
+                <div class="container">
+                    
+                </div>
+            </section>
+            
+             <!--Подвал-->
+            <section class="footer--container">
+                <div class="container">
+                    <div class="footer--container__section">
+                    <address class="contacts">
+                        <div class="contacts__desc">Москва, ул.Новый Арбат, д.31/12</div>
+                        <a href="tel:+78009039090" class="phone-number">
+                            <span class="phone-number__icon">
+                                <img src="./img/black phone.svg" class="phone-number__icon-elem" alt="телефон">
+                            </span>
+                            <span class="phone-number__text--footer">88009039090</span>
+                        </a>
+                    </address>
+
+                    <nav class="social ">
+                        <ul class="socials__list">
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <img src="./img/vk.svg" alt="в контакте">
+                                        </a>
+                                    </li>
+
+                                    <li class="social__item ">
+                                        <a href="#" class="social__link">
+                                            <img src="./img/facebook.svg" alt="фейсбук">
+                                        </a>
+                                    </li>
+
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <img src="./img/inst.svg" alt="инстаграм">
+                                        </a>
+                                    </li>
+
+                                    <li class="social__item">
+                                        <a href="#" class="social__link">
+                                            <img src="./img/twitter.svg" alt="твиттер">
+                                        </a>
+                                    </li>
+                                </ul>
+                    </nav>
+                </div>
+                </div>
+            </section>
+ </div>
             <!--Боковое меню-->
              <nav class="fixed--menu">
     <ul class="fixed--menu__list">

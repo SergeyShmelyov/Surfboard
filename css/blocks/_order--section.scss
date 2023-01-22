@@ -1,9 +1,11 @@
 .order--section{
-    background: url(./../img/surfer.svg) no-repeat;
+    background: url(./../img/surfer.svg) top 5% center/contain no-repeat;
     background-color:#1968B1;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(480px);
     color: white;
     background-size: cover;
+
+   
     
 }
