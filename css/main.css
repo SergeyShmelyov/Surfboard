@@ -180,6 +180,7 @@ footer {
 @media screen and (max-width: 480px) {
   .hero__main-title {
     padding: 0 0;
+    font-size: 1.6666666667rem;
   }
 }
 
