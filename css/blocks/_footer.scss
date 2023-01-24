@@ -31,6 +31,12 @@
    
 }
 
+.socials__list{
+    margin-top: 15px;
+}
+
+
+
 .social__item{
     display: inline-block;
     vertical-align: middle;
@@ -86,4 +92,32 @@
     width: rem(25px);
     fill: black;
     stroke: black;
+}
+
+.vk--icon{
+    width: 24px;
+    height: 14px;
+    fill:#B3B3B3;
+    stroke: #B3B3B3;
+    
+}
+
+.face--icon{
+    width: 24px;
+    height: 24px;
+    fill:#B3B3B3;
+    stroke: #B3B3B3;
+}
+
+.inst--icon{
+    width: 24px;
+    height: 24px;
+    fill:#B3B3B3;
+    stroke: #B3B3B3;
+}
+.twit--icon{
+    width: 24px;
+    height: 21px;
+    fill:#B3B3B3;
+    stroke: #B3B3B3;
 }
