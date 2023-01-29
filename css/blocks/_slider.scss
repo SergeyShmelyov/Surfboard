@@ -1,6 +1,6 @@
 .slider{
     background: #F8FAF9;
-
+    
 
     &__container{
         flex-direction: row;
@@ -8,39 +8,47 @@
         justify-content: center;
         position: relative;
 
+       
     }
 
     &__arrow{
         position: absolute;
         top:50%;
+
+        @include tablets{
+                top:25%;
+            }
+
         &:hover{
             cursor: pointer;
         }
 
         &--left{
             left: 0;
+
+            @include tablets{
+                left: rem(100px);
+            }
+            
         }
 
         &--right{
             rotate: 180deg;
-            right: 0;
+            right: 0; 
         }
 
         &--icon{
             width: rem(24px);
             height: rem(40px);
-
         }
+        
     }
-
-
-
 
     &__list{
         display: flex;
         position: relative;
         right: 0;
-
+        
         &--wrap{
             width: rem(700px);
             overflow: hidden;
@@ -50,6 +58,12 @@
 
     &__item{
         width: rem(700px);
+
+        @include tablets{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
     }
 }
 
@@ -65,6 +79,12 @@
 
     &__content{
         width: 50%;
+
+        @include tablets{
+            width: 75%;
+        }
+
+
     }
 
     &__title{
@@ -72,6 +92,7 @@
         font-size: rem(36px);
         line-height: rem(43px);
         color: $black;
+        text-transform: uppercase;
 
         &--wrap{
             margin-bottom: rem(24px);
@@ -80,7 +101,7 @@
 
     &__params{
         background: #3A587E;
-        border-radius: 4px; 
+        border-radius: rem(4px); 
         padding: rem(17px) rem(7px);
         width: rem(90px);
         height: rem(90px);
@@ -103,22 +124,47 @@
             line-height: rem(17px);
             color: white;
         }
+
+        @include tablets{
+            display: none;
+        }
     }
 
+
         &__desc{
+
+          
             color: $body;
             margin-bottom: rem(24px);
+
+            @include tablets{
+                
+            }
+
+            
+            
         }
 
         &__info{
             display: flex;
             margin-bottom: rem(24px);
+
+            @include tablets{
+
+                justify-content: center;
+            }
+
         }
 
         &__bottom{
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @include tablets{
+
+                justify-content: center;
+            }
      
         }
 

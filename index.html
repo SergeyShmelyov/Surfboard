@@ -57,11 +57,15 @@
                                 <span class="phone-number__text">88009039090</span>
                             </a>
 
+                                <!--меню гамбургер-->
                             <a href="" class="hamburger">
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
                                 <span class="hamburger__plank"></span>
+
                             </a>
+
+
                         </header>
                         <!-- центральный заголовок -->
                     <div class="hero__title-section">
@@ -185,6 +189,8 @@
                                         <img src="./img/product.svg" alt="surboard#1" class="slide__img">
                                     </div>
                                     <div class="slide__content">
+                                        
+                                        <div class="dropdown">
                                         <div class="slide__params">
                                             <div class="slide__params_img--wrap">
 
@@ -194,6 +200,58 @@
                                             </div>
 
                                             <div class="slide__params_text">Параметры</div>
+
+                                            <div class="dropdown__menu">
+
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+
+                                                        <svg class="drop__img">
+                                                            <use xlink:href="./img/length.svg#length"></use>
+                                                            
+                                                        </svg>
+                                                                <div class="drop__title">Длина доски  </div>
+                                                                <div class="drop__text">от 2,5 м</div>
+                                                    </li>
+
+                                                    <li class="dropdown__item">
+
+                                                        <svg class="drop__img">
+                                                            <use xlink:href="./img/width.svg#width"></use>
+                                                            
+                                                        </svg>
+                                                        
+                                                                <div class="drop__title">Ширина доски</div>
+                                                                <div class="drop__text">от 40 см</div>
+                                                    </li>
+
+                                                    <li class="dropdown__item">
+                                                        <svg class="drop__img">
+                                                            <use xlink:href="./img/thickness.svg#thickness"></use>
+                                                        </svg>
+                                                                <div class="drop__title">Толщина</div>
+                                                                <div class="drop__text">8 см</div>
+                                                    </li>
+
+                                                    <li class="dropdown__item">
+                                                        <svg class="drop__img">
+                                                            <use xlink:href="./img/life time.svg#lifetime"></use>
+                                                        </svg>
+                                                                <div class="drop__title">Срок службы</div>
+                                                                <div class="drop__text">5 лет</div>
+                                                    </li>
+
+                                                    <li class="dropdown__item">
+                                                        <svg class="drop__img">
+                                                            <use xlink:href="./img/weight.svg#weight"></use>
+                                                        </svg>
+                                                                <div class="drop__title">Вес</div>
+                                                                <div class="drop__text">7-8 кг</div>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                            </div>
                                         </div>
 
                                         <div class="slide__title--wrap">
@@ -279,53 +337,80 @@
                 </section>
 
                 <!--Страница Отзывы -->
-                <section class="section reviews--section">
-                    <div class="container">
-                    <h2 class="section__title">отзывы</h2> 
-                        <div class="reviews">
-                            <div class="reviews__display">
-                                <div class="reviews__display--inner">
-                                    <div class="reviews__avatar">
-                                        <img src="./img/disign.svg" alt="black girl" class="reviews__avatar--img">
+                <section class="reviews">
+                    <div class="container container__reviews section">
+                        <div class="reviews__title--wrap">
+                            <div class="reviews__title title">Отзывы</div>
+                        </div>
+                        <div class="reviews__list--wrap">
+                            <ul class="reviews__list">
+
+                                <li class="reviews__item review review__active">
+                                    <div class="review__img--wrap">
+                                        <img src="./img/disign.svg" alt="аватар" class="review__img">
                                     </div>
-                                    <article class="reviews__content">
-                                        <h3 class="reviews__title">Лучший дизайн</h3>
-                                        <div class="reviews__text">
-                                            <p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
-                                            </p>
+                                    <div class="review__content">
+                                        <h4 class="review__title">Лучший дизайн</h4>
+                                        <div class="review__text">Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
                                         </div>
-                                        <div class="reviews__autor">Ольга Макарова
+                                        <div class="review__author">Ольга Макарова</div>
+                                    </div>
+                                </li>
+
+                                <li class="reviews__item review ">
+                                    <div class="review__img--wrap">
+                                        <img src="./img/speed.svg" alt="аватар" class="review__img">
+                                    </div>
+                                    <div class="review__content">
+                                        <h4 class="review__title">Нереальная скорость</h4>
+                                        <div class="review__text">Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                                            Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                                            
                                         </div>
-                                    </article>
-                                </div>
-                            </div>
-
-
-                            <ul class="reviews__switcher">
-                                <li class="reviews__switcher--item interactiv--avatar interactiv--avatar--active">
-                                    <a href="#" class="interactiv--avatar__link">
-                                        <img src="./img/disign.svg" alt="black girl" class="interactiv--avatar__img">
-                                    </a>
+                                        <div class="review__author">Марк Брюлов</div>
+                                    </div>
                                 </li>
 
-                                <li class="reviews__switcher--item interactiv--avatar">
-                                    <a href="#" class="interactiv--avatar__link">
-                                        <img src="./img/speed.svg" alt="black girl" class="interactiv--avatar__img">
-                                    </a>
+                                <li class="reviews__item review ">
+                                    <div class="review__img--wrap">
+                                        <img src="./img/defender.svg" alt="аватар" class="review__img">
+                                    </div>
+                                    <div class="review__content">
+                                        <h4 class="review__title">Устойчивость и безопасность</h4>
+                                        <div class="review__text">Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!
+                                        </div>
+                                        <div class="review__author">Василий Поперечный
+                                        </div>
+                                    </div>
                                 </li>
 
-                                <li class="reviews__switcher--item interactiv--avatar">
-                                    <a href="#" class="interactiv--avatar__link">
-                                        <img src="./img/defender.svg" alt="black girl" class="interactiv--avatar__img">
-                                    </a>
-                                </li>
                             </ul>
                         </div>
 
+                        <ul class="reviews__authors authors__list">
 
+                            <li class="authors__item author author--active">
+                                <div class="author__img--wrap">
+                                    <img src="./img/disign.svg" alt="аватар" class="author__img">
+                                </div>
+                            </li>
 
+                            <li class="authors__item author">
+                                <div class="author__img--wrap">
+                                    <img src="./img/speed.svg" alt="аватар" class="author__img">
+                                </div>
+                            </li>
+
+                            <li class="authors__item author">
+                                <div class="author__img--wrap">
+                                    <img src="./img/defender.svg" alt="аватар" class="author__img">
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
-                    
+
+                    <script src="reviews.js"></script>
                 </section>
 
                 <!--Страница Формы -->
@@ -514,5 +599,40 @@
                     </ul>
                 </nav>
 
+                <!--Всплывающее меню-->
+                  <div class="fullscreen-menu">
+                    <a href="#" class="fullscreen-menu__close">
+
+                      <svg class="fullscreen-menu__close-icon">
+                        <use xlink:href="./img/close.svg#close"></use>
+                      </svg>
+                    </a>
+                    <nav class="menu menu--vertical">
+                      <ul class="menu__list">
+                        <li class="menu__item">
+                          <a href="#" class="menu__link">О нас</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="#" class="menu__link">Батончики</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="#" class="menu__link">Команда</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="#" class="menu__link">Меню</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="#" class="menu__link">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="#" class="menu__link">Как мы работаем</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                      </ul>
+                      <script src="menu.js"></script>
+                    </nav>
+                  </div>
     </body>
 </html>

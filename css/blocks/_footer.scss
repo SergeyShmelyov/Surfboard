@@ -32,7 +32,7 @@
 }
 
 .socials__list{
-    margin-top: 15px;
+    margin-top: rem(15px);
 }
 
 
@@ -95,29 +95,29 @@
 }
 
 .vk--icon{
-    width: 24px;
-    height: 14px;
+    width: rem(24px);
+    height: rem(14px);
     fill:#B3B3B3;
     stroke: #B3B3B3;
     
 }
 
 .face--icon{
-    width: 24px;
-    height: 24px;
+    width: rem(24px);
+    height: rem(24px);
     fill:#B3B3B3;
     stroke: #B3B3B3;
 }
 
 .inst--icon{
-    width: 24px;
-    height: 24px;
+    width: rem(24px);
+    height: rem(24px);
     fill:#B3B3B3;
     stroke: #B3B3B3;
 }
 .twit--icon{
-    width: 24px;
-    height: 21px;
+    width: rem(24px);
+    height: rem(21px);
     fill:#B3B3B3;
     stroke: #B3B3B3;
 }
