@@ -7,8 +7,6 @@
         align-items: center;
         justify-content: center;
         position: relative;
-
-       
     }
 
     &__arrow{
@@ -150,7 +148,6 @@
             margin-bottom: rem(24px);
 
             @include tablets{
-
                 justify-content: center;
             }
 
@@ -162,7 +159,6 @@
             align-items: center;
 
             @include tablets{
-
                 justify-content: center;
             }
      
