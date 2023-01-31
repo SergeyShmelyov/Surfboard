@@ -1091,7 +1091,7 @@ header {
   }
 }
 .slider__arrow--right {
-  rotate: 180deg;
+  transform: rotate(180deg);
   right: 0;
 }
 .slider__arrow--icon {
@@ -1261,6 +1261,7 @@ header {
 }
 
 .dropdown {
+  width: 5rem;
   position: relative;
 }
 
