@@ -1,6 +1,9 @@
 .slider{
     background: #F8FAF9;
     
+    @include tablets{
+        height: 100vh;
+    }
 
     &__container{
         flex-direction: row;
@@ -13,25 +16,16 @@
         position: absolute;
         top:50%;
 
-        @include tablets{
-                top:25%;
-            }
-
         &:hover{
             cursor: pointer;
         }
 
         &--left{
             left: 0;
-
-            @include tablets{
-                left: rem(100px);
-            }
-            
         }
 
         &--right{
-            rotate: 180deg;
+            transform: rotate(180deg);
             right: 0; 
         }
 
@@ -39,7 +33,12 @@
             width: rem(24px);
             height: rem(40px);
         }
-        
+        @include tablets{
+            top:25%;
+        }
+        @include phones{
+            top:20%;
+        }
     }
 
     &__list{
@@ -51,6 +50,10 @@
             width: rem(700px);
             overflow: hidden;
             display: flex;
+        }
+
+        @include tablets{
+            width: 100%;
         }
     }
 
@@ -82,6 +85,7 @@
             width: 75%;
         }
 
+        
 
     }
 
@@ -178,13 +182,22 @@
                 margin-right: rem(28px);
                 margin-right: rem(20px);
             }
+            @include phones{
+                margin-right: rem(10px);
+                font-size: rem(40px);
+            }
         }
 
         &__btn{
             height: rem(60px);
         }
         
-        
+       
+        @include tablets{
+            width: 100%;
+            flex-shrink: 0;
+        }
+
 }
 
 .info{
