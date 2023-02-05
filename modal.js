@@ -16,16 +16,14 @@ const validateFields = (form, fieldsArray) => {
 $('.form').submit((e)=>{
     e.preventDefault();
 
-
 const form = $(e.currentTarget);
+
 const name = form.find("[name='name']");
 const phone = form.find("[name='phone']");
 const comment = form.find("[name='comment']");
 const to = form.find("[name='to']");
-
 const modal = $("#modal");
 const content = modal.find(".modal__content");
-
 modal.removeClass("error-modal");
 
 const isValid = validateFields(form, [name, phone, comment, to]);
