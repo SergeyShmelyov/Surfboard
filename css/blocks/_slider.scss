@@ -47,22 +47,23 @@
             
         }
         @include phones{
-            top:20%;
+            top:30%;
         }
     }
 
     &__list{
-
+        width: 100%;
         background: #F8FAF9;
         display: flex;
         position: relative;
         right: 0;
         
         &--wrap{
+            
             align-items: center;
-        justify-content: center;
+            justify-content: center;
             height: 100%;
-            width: rem(700px);
+            width: 100%;
             overflow: hidden;
             display: flex;
             
@@ -95,15 +96,30 @@
     align-items: center;
     &__img{
         &--wrap{
-            width: 45%;
+            width: 56%;
+            margin-left: rem(100px);
+
+            @include tablets{
+                width: 40%;
+                margin-left: 0;
+                
+        }
+        @include phones{
+            margin-left: 0;
+            
+    }
+
+
         }
     }
 
     &__content{
         width: 50%;
+            padding-right: 110px;
 
         @include tablets{
             width: 75%;
+            padding-right: 0;
         }
 
         
