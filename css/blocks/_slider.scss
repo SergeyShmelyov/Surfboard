@@ -115,7 +115,7 @@
 
     &__content{
         width: 50%;
-            padding-right: 110px;
+            padding-right: rem(100px);
 
         @include tablets{
             width: 75%;

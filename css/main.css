@@ -1187,7 +1187,7 @@ header {
 }
 .slide__content {
   width: 50%;
-  padding-right: 110px;
+  padding-right: 5.5555555556rem;
 }
 @media screen and (max-width: 768px) {
   .slide__content {
