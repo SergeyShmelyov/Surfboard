@@ -1,11 +1,21 @@
-.map{
-    background: url(./../img/map.svg) center center/contain no-repeat;
-    background-color:#1968B1;
-    height: 100vh;
-    min-height: rem(320px);
-    color: white;
-    background-size: cover;
-    font-weight: bold;
+ .footer--container {
+    background: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+.map-section {
+    position: relative;
+  }
 
-    
-}
+  #map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+ 

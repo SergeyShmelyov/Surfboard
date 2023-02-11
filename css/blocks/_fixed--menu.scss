@@ -3,14 +3,24 @@
     top: 40%;
     right: 3%;
     z-index: $z-fixed-menu;
+    color: #fff;
+    transition: .3s;
 
+      &--shadowed {
+        color: #000;
+      }
+
+    @include tablets {
+        display: none;
+      }
 }
+
 .fixed--menu__item{
     margin-bottom: rem(5px);
 
     &--active{
         .fixed--menu__link{
-            border-color: white;
+            border-color: currentColor;
         }
     }
 }
@@ -22,16 +32,20 @@
     display: block;
     position: relative;
 
+    &:hover {
+        border-color: currentColor;
+      }
+
     &::before{
         content: "";
         display: block;
         width: rem(6px);
         height: rem(6px);
         border-radius: 50%;
-        background: white;
+        background: currentColor;
         position: absolute;
         top: 30%;
-        left: 29%;
+        left: 28%;
         transform: translate(-50% -50%);
     }
 }
