@@ -7,23 +7,7 @@
     height: rem(405px); 
     position: relative;
     margin: 0 auto;
-  
-    &:before, &:after {
-      position: absolute;
-    }
-  
-    &::before {
-      content: url("");
-      bottom: rem(-48px);
-      left: rem(-121px);
-    }
-  
-    &::after {
-      content: url("");
-      top: rem(-45px);
-      right: rem(-80px);
-    }
-  }
+   }
 
   .player {
     width: 100%;
@@ -45,14 +29,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("../img/surfscreen.png") center center / cover no-repeat;
+    background: url("./../img/surfscreen.png") center center / cover no-repeat;
     cursor: pointer;
   
     &:before {
       position: absolute;
       top: 50%;
       left: 50%;
-      content: url("../img/play.svg");
+      content: url("./../img/play.svg");
       transform: translate(-50%, -50%);
     }
   }
