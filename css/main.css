@@ -208,6 +208,28 @@ footer {
     display: none;
   }
 }
+.menu--vertical {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .menu--vertical {
+    display: block;
+  }
+}
+.menu--vertical .menu__item {
+  margin-right: 0;
+}
+.menu--vertical .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 
 .menu__list {
   -ms-flex-wrap: wrap;
@@ -234,6 +256,9 @@ footer {
 .menu__link {
   text-decoration: none;
   white-space: nowrap;
+}
+.menu__link:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -1692,7 +1717,7 @@ header {
   color: red;
 }
 .modal.fancybox-content {
-  padding: 0;
+  padding: 0 !important;
 }
 .modal .fancybox-button {
   display: none;
@@ -1732,19 +1757,6 @@ header {
   position: relative;
   margin: 0 auto;
 }
-.player-section__container:before, .player-section__container:after {
-  position: absolute;
-}
-.player-section__container::before {
-  content: url("./images/decor/corner-leaf.png");
-  bottom: -2.6666666667rem;
-  left: -6.7222222222rem;
-}
-.player-section__container::after {
-  content: url("./images/decor/blured-leaf.png");
-  top: -2.5rem;
-  right: -4.4444444444rem;
-}
 
 .player {
   width: 100%;
@@ -1764,14 +1776,14 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/img/surfscreen.png") center center/cover no-repeat;
+  background: url("../../img/surfscreen.png") center center/cover no-repeat;
   cursor: pointer;
 }
 .player__splash:before {
   position: absolute;
   top: 50%;
   left: 50%;
-  content: url("/img/play.svg");
+  content: url("../../img/play.svg");
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -1880,7 +1892,7 @@ header {
 }
 
 .products-menu-section {
-  background: url("/img/Slider.png") center center/cover no-repeat;
+  background: url("../../img/Slider.png") center center/cover no-repeat;
   position: relative;
   color: #fff;
 }

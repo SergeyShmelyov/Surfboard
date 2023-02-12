@@ -63,5 +63,10 @@ if (isValid) {
 
 $(".app-submit-btn").click((e) => {
     e.preventDefault();
+
+
+
+
+
     $.fancybox.close();
 });

@@ -1,11 +1,35 @@
 .menu{
-margin: 0 rem(20px);
-padding-top: rem(5px);
+    margin: 0 rem(20px);
+    padding-top: rem(5px);
 
     @include tablets{
         display: none;
     }
+
+    &--vertical {
+
+        @include tablets {
+          display: block;
+        }
+
+        font-size: rem(36px);
+        color: #fff;
+        text-align: center;
+    
+        .menu__item {
+          margin-right: 0;
+        }
+
+        .menu__list {
+          display: flex;
+          flex-direction: column;
+        }
+      }
 }
+
+
+
+
 .menu__list{
     flex-wrap: wrap;
     justify-content: center;
@@ -27,4 +51,9 @@ padding-top: rem(5px);
 .menu__link{
     text-decoration: none;
     white-space: nowrap;
+
+    &:hover {
+        text-decoration: underline;
+      }
+
 }
