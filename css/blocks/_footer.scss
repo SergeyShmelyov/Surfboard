@@ -121,3 +121,13 @@
     fill:#B3B3B3;
     stroke: #B3B3B3;
 }
+
+.social__link{
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+.social__link:hover{
+    opacity: 1;
+    
+}

@@ -1,4 +1,89 @@
-const validateFields = (form, fieldsArray) => {
+
+const form = document.querySelector('.form');
+const modal = document.querySelector('#modal');
+const modalContent = document.querySelector('.modal__content');
+const body = document.querySelector('.body');
+
+
+const validateField = (field) =>{
+  if(!field.value.trim().length) {
+    field.classList.add('input-error')
+    return false
+  } else{
+    field.classList.remove('input-error')
+    return true
+  }
+};
+
+const validateForm = (data) => {
+  let isValid = true
+  for (const key in data) {
+    if (Object.hasOwnProperty.call(data, key)){
+      const element = data[key];
+      const valid = validateField(element)
+      if (!valid){
+        isValid = false
+      }
+    }
+  }
+  return isValid;
+
+}
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault()
+    const data = {
+    name: form.elements.name,
+    phone: form.elements.phone,
+    comment: form.elements.comment,
+  }
+
+  console.log(modal)
+
+  
+    if (validateForm (data)) {
+
+    console.log('отправляем запрос')
+    modalContent.innerHTML='Сообщение отправлено'
+
+    modal.classList.add('modal__visible')
+    body.classList.add('body__closed')
+  } else {
+
+    modalContent.innerHTML='Сообщение не отправлено'
+
+    modal.classList.add('modal__visible')
+    
+    console.log('не отправляем запрос, ждем , когда пользователь заполнит форму')
+  }
+
+})
+
+document.querySelector('.app-submit-btn').addEventListener('click', e =>{
+    modalContent.innerHTML=''
+    modal.classList.remove('modal__visible')
+    body.classList.remove('body__closed')
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const validateFields = (form, fieldsArray) => {
     fieldsArray.forEach((field) => {
       field.removeClass("input-error");
       if (field.val().trim() === "") {
@@ -10,8 +95,6 @@ const validateFields = (form, fieldsArray) => {
   
     return errorFields.length === 0;
   };
-
-
 
 $('.form').submit((e)=>{
     e.preventDefault();
@@ -30,7 +113,7 @@ const isValid = validateFields(form, [name, phone, comment, to]);
 
 if (isValid) {
     const request = $.ajax({
-        url:"",
+        url:"https://webdev-api.loftschool.com/sendmail",
         metod:"post",
         data:{
             name: name.val(),
@@ -40,6 +123,7 @@ if (isValid) {
         },
 
         error: (data) => {},
+        
     });
 
     request.done((data) => {
@@ -47,9 +131,10 @@ if (isValid) {
       });
   
       request.fail((data) => {
-        const message = data.responseJSON.message;
+        const message = ("Отправить письмо не удалось");
         content.text(message);
         modal.addClass("error-modal");
+        console.log(data);
       });
   
       request.always(() => {
@@ -69,4 +154,4 @@ $(".app-submit-btn").click((e) => {
 
 
     $.fancybox.close();
-});
+});*/

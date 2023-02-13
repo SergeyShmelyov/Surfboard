@@ -14,15 +14,23 @@ html{
 body,
 html {
 	height: 100%;
+	
 }
 
 body {
+	height: 100%;
+	overflow: hidden;
     font-family: Alegreya Sans, Arial, Helvetica, sans-serif;
     line-height: 1.42;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     position: relative;
 	color: $body;
+}
+
+.body__closed{
+	height: 100%;
+	overflow: hidden;
 }
 
 button {
