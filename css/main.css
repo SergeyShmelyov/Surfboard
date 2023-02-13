@@ -2055,3 +2055,9 @@ header {
 .products-menu__close-icon:hover {
   opacity: 0.5;
 }
+
+@media screen and (max-width: 480px) {
+  .products-menu__content-text {
+    font-size: 0.9444444444rem;
+  }
+}

@@ -100,5 +100,12 @@
       opacity: .5;
     }
   }
+  .products-menu__content-text{
+
+    @include phones{
+      font-size: rem(17px);
+  }
+    
+  }
  
   
