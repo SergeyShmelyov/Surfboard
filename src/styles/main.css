@@ -114,7 +114,7 @@ footer {
 }
 
 .hero {
-  background: url(../src/img/surfboard.svg) center center/contain no-repeat;
+  background: url(../../src/img/surfboard.svg) center center/contain no-repeat;
   height: 100%;
   min-height: 26.6666666667rem;
   color: white;
@@ -123,13 +123,13 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    background: url(../src/img/surf.svg) center center/contain no-repeat;
+    background: url(../../src/img/surf.svg) center center/contain no-repeat;
     background-size: cover;
   }
 }
 @media screen and (max-width: 480px) {
   .hero {
-    background: url(../src/img/surf.svg) center center/contain no-repeat;
+    background: url(../../src/img/surf.svg) center center/contain no-repeat;
     background-size: cover;
   }
 }
@@ -468,7 +468,7 @@ header {
   }
 }
 .benefits_item:before {
-  content: url(../src/img/separator.svg);
+  content: url(../../src/img/separator.svg);
   position: absolute;
   top: 3.3333333333rem;
   right: 0;
@@ -700,7 +700,7 @@ header {
 }
 
 .order--section {
-  background: url(../src/img/surfer.svg) top 5% center/contain no-repeat;
+  background: url(../../src/img/surfer.svg) top 5% center/contain no-repeat;
   background-color: #1968B1;
   height: 100vh;
   min-height: 26.6666666667rem;
@@ -842,7 +842,7 @@ header {
   border-radius: 20%;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../src/img/jackdaw.svg) center center no-repeat;
+  background: url(../../src/img/jackdaw.svg) center center no-repeat;
 }
 
 .radio__elem {
@@ -1829,14 +1829,14 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../src/img/surfscreen.png") center center/cover no-repeat;
+  background: url("../../src/img/surfscreen.png") center center/cover no-repeat;
   cursor: pointer;
 }
 .player__splash:before {
   position: absolute;
   top: 50%;
   left: 50%;
-  content: url("../src/img/play.svg");
+  content: url("../../src/img/play.svg");
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -1945,7 +1945,7 @@ header {
 }
 
 .products-menu-section {
-  background: url("../src/img/Slider.png") center center/cover no-repeat;
+  background: url("../../src/img/Slider.png") center center/cover no-repeat;
   position: relative;
   color: #fff;
 }
