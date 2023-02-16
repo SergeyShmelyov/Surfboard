@@ -50,8 +50,7 @@ form.addEventListener('submit', function(e) {
     body.classList.add('body__closed')
   } else {
 
-    modalContent.innerHTML='Сообщение не отправлено'
-
+    modalContent.innerHTML='Сообщение не отправлено заполните поля'
     modal.classList.add('modal__visible')
     
     console.log('не отправляем запрос, ждем , когда пользователь заполнит форму')
@@ -63,6 +62,7 @@ document.querySelector('.app-submit-btn').addEventListener('click', e =>{
     modalContent.innerHTML=''
     modal.classList.remove('modal__visible')
     body.classList.remove('body__closed')
+    
     
 })
 

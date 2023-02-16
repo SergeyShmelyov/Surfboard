@@ -3,6 +3,7 @@ const display = $(".maincontent");
 const sideMenu = $(".fixed--menu");
 const menuItems = sideMenu.find(".fixed--menu__item");
 
+
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
 
@@ -92,7 +93,15 @@ const viewportScroller = () =>{
 $(window).on("wheel", (e) => {
     const deltaY = e.originalEvent.deltaY;
     const scroller = viewportScroller();
-  
+
+    if(modal.classList.contains('modal__visible')){
+      return;
+    }
+
+    if(menu.classList.contains('active')){
+      return;
+    }
+    
     if (deltaY > 0) {
         scroller.next();
       
@@ -101,6 +110,7 @@ $(window).on("wheel", (e) => {
     if (deltaY < 0) {
         scroller.prev();
     }
+   
   });
 
   $(window).on("keydown", (e) => {
