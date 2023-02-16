@@ -28,14 +28,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("/src/img/surfscreen.png") center center / cover no-repeat;
+    background: url("../src/img/surfscreen.png") center center / cover no-repeat;
     cursor: pointer;
   
     &:before {
       position: absolute;
       top: 50%;
       left: 50%;
-      content: url("/src/img/play.svg");
+      content: url("../src/img/play.svg");
       transform: translate(-50%, -50%);
     }
   }
